@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* .scroll-container {
+    scroll-snap-type: y mandatory;
+    /* y: snaps vertically | x: snaps horizontally | both: for both directions */
+    /* mandatory: forces the snap, even with fast scrolling | proximity: snaps if close */
+  
+   */
+
+*{
+    font-family: 'Times New Roman';
+}
+
+.life {
+    background-image: src("./public/LIFE.jpg");
+}

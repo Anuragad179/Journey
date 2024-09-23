@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const sidePanel = document.getElementById('side-panel');
     const mainContent = document.getElementById('main-content');
+    const photoContent = document.getElementById('photo');
     
     // Open/Close Side Panel on Menu Button Click
     menuButton.addEventListener('click', (e) => {
@@ -17,6 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!sidePanel.classList.contains('-translate-x-full')) { // Only close if panel is open
             sidePanel.classList.add('-translate-x-full');  // Close panel
             mainContent.classList.remove('blur-lg');  // Remove blur effect from main content
+        }
+    });
+
+    photoContent.addEventListener('click', () => {
+        if (!sidePanel.classList.contains('-translate-x-full')) { // Only close if panel is open
+            sidePanel.classList.add('-translate-x-full');  // Close panel
+            photoContent.classList.remove('blur-lg');
         }
     });
 });
